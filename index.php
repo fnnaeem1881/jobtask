@@ -52,18 +52,18 @@ $arr = [
 ];
 
 
-foreach($arr as $a){
-    if($a['p_id']===0){
+foreach($arr as $fn){
+    if($fn['p_id']===0){
         echo "<ul>";
-        echo "<li>".$a['title'];
-        foreach($arr as $b){
-            if($b['p_id']===$a['id']){
+        echo "<li>".$fn['title'];
+        foreach($arr as $fn1){
+            if($fn1['p_id']===$fn['id']){
                 echo "<ul>";
-                echo "<li>".$b['title']; 
-                    foreach($arr as $c){
-                        if($c['p_id']===$b['id']){
+                echo "<li>".$fn1['title']; 
+                    foreach($arr as $fn3){
+                        if($fn3['p_id']===$fn1['id']){
                         echo "<ul>";
-                        echo "<li>".$c['title']; 
+                        echo "<li>".$fn3['title']; 
                         echo "</li>";
                         echo "</ul>";
                         } 
